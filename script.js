@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ["Développeur d'applications", 'Développeur web', 'Administrateur systèmes et réseaux', 'Développeur de jeux vidéo'],
+    strings: ["Développeur d'applications",'Développeur web', 'Développeur de jeux vidéo', 'Administrateur systèmes et réseaux'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

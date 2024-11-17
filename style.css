@@ -83,6 +83,7 @@ section{
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
+    margin-left: 200px;
 }
 
 @keyframes floatImage {
@@ -386,11 +387,17 @@ span{
     html{
         font-size: 55%;
     }
+    .home-img img {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
+    }
+    .home-img img {
+        margin-left: 0px;
     }
 
     section {
@@ -470,6 +477,9 @@ span{
     .services h2 {
         margin-bottom: 3rem;
     }
+    .home-img img {
+        margin-left: 0px;
+    }
 
     .portfolio h2 {
         margin-bottom: 3rem;
@@ -484,11 +494,17 @@ span{
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+    .home-img img {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .home-img img {
+        margin-left: 0px;
     }
     .contact form .input-box input {
         width: 100%;
@@ -503,6 +519,10 @@ span{
 
     .about-img img {
         width: 90vw;
+    }
+
+    .home-img img {
+        margin-left: 0px;
     }
 
     .footer {
