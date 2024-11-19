@@ -35,7 +35,7 @@ window.onscroll = () => {
 };
 
 ScrollReveal({ 
-    //reset: true,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
@@ -51,9 +51,27 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ["Développeur d'applications",'Développeur web', 'Développeur de jeux vidéo', 'Administrateur systèmes et réseaux'],
+    strings: ["Software developper",'Web developer', 'Video game developer', 'Systems and network administrator'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
+});
+
+
+
+emailjs.init('cKonC7LyuXvkfDZjf'); // Remplacez par votre User ID EmailJS
+ 
+document.querySelector('#contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Empêche le rafraîchissement de la page
+ 
+    const serviceID = 'service_7svti8v';
+    const templateID = 'template_zj6p5hg';
+ 
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert('Message envoyé avec succès !');
+        }, (err) => {
+            alert(JSON.stringify(err));
+        });
 });
