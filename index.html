@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -25,9 +26,9 @@
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Salut, c'est </h3>
+            <h3>Hello, It's </h3>
             <h1>Mehdi Fadhloune</h1>
-            <h3>Et je suis un <span class="multiple-text"></span></h3>
+            <h3>And I am a <span class="multiple-text"></span></h3>
             <!-- <p>Bonjour je hezfiuhezf uzhfq zfzeufygz fuzfz gfz</p> -->
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook' ></i></a>
@@ -35,7 +36,8 @@
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="images\Mehdi FADHLOUNE.pdf" class="btn" download>Download CV</a>
+
         </div>
 
         <div class="home-img">
@@ -50,7 +52,7 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
+            <h2 class="heading">A propos de <span>Moi</span></h2>
             <h3>Frontend Developper</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae assumenda tenetur sunt eum, minima voluptates atque inventore 
                 ipsam molestias consequuntur eius numquam in deleniti error laudantium doloremque corporis ipsum ullam dolor laborum repellat recusandae. 
@@ -63,29 +65,58 @@
     <section class="services" id="services">
         <h2 class="heading">Our <span>Services</span></h2>
 
+
+        
+        
         <div class="services-container">
+
+
             <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
-                <h3>Web Development</h3>
+                <i class='bx bx-signal-5'></i>
+                <h3>Administration Systèmes et Réseaux</h3>
+                <p>Gestion de serveurs web (Apache, Nginx), serveurs de base de données (MySQL, PostgreSQL), et serveurs d’applications.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Designer graphique</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quia ullam consequatur quaerat officiis, error corrupti natus. Reiciendis, nihil corporis.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             
+
             <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphics Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quia ullam consequatur quaerat officiis, error corrupti natus. Reiciendis, nihil corporis.</p>
+                <i class='bx bxs-data' ></i>
+                <h3>Gestion de Bases de Données</h3>
+                <p>Création et gestion de bases de données SQL (MySQL, PostgreSQL).</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
-                
+            
+
+
             <div class="services-box">
-                <i class='bx bx-bar-chart-alt' ></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quia ullam consequatur quaerat officiis, error corrupti natus. Reiciendis, nihil corporis.</p>
+                <i class='bx bx-code-alt' ></i>
+                
+                <h3>Développement web, mobile et logiciel</h3>
+                <p>Développement de sites internet dynamiques, d'applications natives pour IOS et d'applications pour Windows, macOS, ou Linux </p>
                 <a href="#" class="btn">Read More</a>
             </div>
+
+
+            <div class="services-box">
+                <i class='bx bxl-windows'></i>
+                <h3>Création et Gestion de Machines Virtuelles</h3>
+                <p>Création de machines virtuelles sur VirtualBox ou d'autres plateformes comme VMware et Hyper-V, permettant de tester des systèmes d'exploitation, des applications, ou des configurations dans un environnement sécurisé et isolé.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            
+
         </div>
 
     </section>
@@ -98,8 +129,8 @@
             <div class="portfolio-box">
                 <img src="images/appSwiftUI.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                    <h4>Application SwiftUI</h4>
+                    <p>C'est une application pour commander du matériel de pompier. Touts les matériaux sont stockés dans une base de données.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -108,8 +139,8 @@
             <div class="portfolio-box">
                 <img src="images/appWPF1.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                    <h4>Application Avalonia</h4>
+                    <p>C'est une application pour commander du matériel de pompier. Tous les matériaux sont stockés dans une base de données.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -118,8 +149,8 @@
             <div class="portfolio-box">
                 <img src="images/imgUnity.jpeg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                    <h4>Jeux Unity</h4>
+                    <p>Jeu d'horreur, vous devez éviter de vous faire tuer par le monstre et survivre pour vous échapper à l'aide de la voiture.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -128,8 +159,8 @@
             <div class="portfolio-box">
                 <img src="images/siteWebSecurise.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                    <h4>Site web Html, CSS et Javascript</h4>
+                    <p>Site web sécurisé. Pour y accéder vous devez vous être approuvé par l'administrateur.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -148,21 +179,22 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <form action="" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Nom + Prénom" required>
+                <input type="email" name="email" placeholder="Adresse Mail" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="phone" placeholder="Numéro de téléphone" required>
+                <input type="text" name="subject" placeholder="Objet" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" cols="30" rows="10" placeholder="Votre Message" required></textarea>
+            <input type="submit" value="Envoyer le Message" class="btn">
         </form>
     </section>
+    
 
     <footer class="footer">
         <div class="footer-text">
