@@ -1,3 +1,3 @@
 # Portfolio2
 
-![Choix du parcours](images\screenshot.png)
+![screenshot de la page d'accueil](images\screenshot.png)
