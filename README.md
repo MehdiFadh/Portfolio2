@@ -1,2 +1,3 @@
 # Portfolio2
- amélioration
+
+![Choix du parcours](images/screenshot.png)
